@@ -1,0 +1,40 @@
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta charset="utf-8">
+<title>浏览器进程、JS事件循环机制、宏任务和微任务 - shibaziBlog</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2a2b33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="本想写写Promise的，但是查阅相关博客的时候发现浏览器进程、JS事件循环机制、宏任务和微任务需要提前学习一下，于是有了这篇博客。参考链接 区分进程和线程用个形象的比喻：   进程是一个工厂，工厂有自己独立的资源 工厂之间相互独立 线程是工厂中的工人，多个工人协作完成任务 工厂内有一个或多个工人 工人之间共享空间   引申为计算机线程进程：   进程是一个工厂，工厂有自己独立的资源 -&amp;gt;">
+<meta name="keywords" content="javaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浏览器进程、JS事件循环机制、宏任务和微任务">
+<meta property="og:url" content="http://yoursite.com/post/beforePromise/index.html">
+<meta property="og:site_name" content="shibaziBlog">
+<meta property="og:description" content="本想写写Promise的，但是查阅相关博客的时候发现浏览器进程、JS事件循环机制、宏任务和微任务需要提前学习一下，于是有了这篇博客。参考链接 区分进程和线程用个形象的比喻：   进程是一个工厂，工厂有自己独立的资源 工厂之间相互独立 线程是工厂中的工人，多个工人协作完成任务 工厂内有一个或多个工人 工人之间共享空间   引申为计算机线程进程：   进程是一个工厂，工厂有自己独立的资源 -&amp;gt;">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/beforePromise/browserandrenderer.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/beforePromise/renderflow.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/beforePromise/evenloop.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/beforePromise/evenloop2.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/09/beforePromise/macmic.png">
+<meta property="og:updated_time" content="2020-07-19T12:01:01.714Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="浏览器进程、JS事件循环机制、宏任务和微任务">
+<meta name="twitter:description" content="本想写写Promise的，但是查阅相关博客的时候发现浏览器进程、JS事件循环机制、宏任务和微任务需要提前学习一下，于是有了这篇博客。参考链接 区分进程和线程用个形象的比喻：   进程是一个工厂，工厂有自己独立的资源 工厂之间相互独立 线程是工厂中的工人，多个工人协作完成任务 工厂内有一个或多个工人 工人之间共享空间   引申为计算机线程进程：   进程是一个工厂，工厂有自己独立的资源 -&amp;gt;">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/09/beforePromise/browserandrenderer.png">
+<link rel="stylesheet" href="/styles.231c5910707587cbde69.css">
+
+<script src="config.315bebfc716e06427c3c.js"></script>
+</head>
+<body>
+<is-root></is-root>
+<script src="/runtime.a66f828dca56eeb90e02.js"></script>
+<script src="/polyfills.8f67e44aa389442fc98e.js"></script>
+<script src="/main.1d4d6ccade471a542a66.en.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta charset="utf-8">
+<title>JS字符串编码 - shibaziBlog</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2a2b33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="最近在工作中遇到一个bug: 背景新增或者编辑标签时，输入框失焦时需要校验标签名是否与已有标签名重复，而标签名只有字数限制（1-10个字符）。 问题校验的接口是get请求，当标签名以“#”、“&amp;amp;”结尾时，会出现一点小问题：比如已存在名为“aa”的标签，当输入“aa#”或“aa&amp;amp;”（这两个标签名不存在）失焦校验时，后台返回“该标签名已存在”，不应该啊，明明没有这个标签名呀？？？ 找b">
+<meta name="keywords" content="编码,HTTP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS字符串编码">
+<meta property="og:url" content="http://yoursite.com/2018/10/25/jsencode/index.html">
+<meta property="og:site_name" content="shibaziBlog">
+<meta property="og:description" content="最近在工作中遇到一个bug: 背景新增或者编辑标签时，输入框失焦时需要校验标签名是否与已有标签名重复，而标签名只有字数限制（1-10个字符）。 问题校验的接口是get请求，当标签名以“#”、“&amp;amp;”结尾时，会出现一点小问题：比如已存在名为“aa”的标签，当输入“aa#”或“aa&amp;amp;”（这两个标签名不存在）失焦校验时，后台返回“该标签名已存在”，不应该啊，明明没有这个标签名呀？？？ 找b">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/10/25/jsencode/pic11.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/25/jsencode/pic1.png">
+<meta property="og:updated_time" content="2019-12-01T13:34:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS字符串编码">
+<meta name="twitter:description" content="最近在工作中遇到一个bug: 背景新增或者编辑标签时，输入框失焦时需要校验标签名是否与已有标签名重复，而标签名只有字数限制（1-10个字符）。 问题校验的接口是get请求，当标签名以“#”、“&amp;amp;”结尾时，会出现一点小问题：比如已存在名为“aa”的标签，当输入“aa#”或“aa&amp;amp;”（这两个标签名不存在）失焦校验时，后台返回“该标签名已存在”，不应该啊，明明没有这个标签名呀？？？ 找b">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/25/jsencode/pic11.png">
+<link rel="stylesheet" href="/styles.231c5910707587cbde69.css">
+
+<script src="config.315bebfc716e06427c3c.js"></script>
+</head>
+<body>
+<is-root></is-root>
+<script src="/runtime.a66f828dca56eeb90e02.js"></script>
+<script src="/polyfills.8f67e44aa389442fc98e.js"></script>
+<script src="/main.1d4d6ccade471a542a66.en.js"></script>
+</body>
+</html>
